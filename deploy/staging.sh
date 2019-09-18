@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -i auth/key.pem ubuntu@13.233.117.16 <<EOF
+ssh -i ~/auth/key.pem ubuntu@13.233.117.16 <<EOF
   cd devops_django
   git pull
   source ../env/bin/activate
