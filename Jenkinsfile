@@ -13,7 +13,6 @@ node {
             sh 'env/bin/python3.6 manage.py test'
         
         stage 'Stagging Deploy'
-            sh 'cd deploy && ls -l'
             sh 'deploy/staging.sh'
 
         stage 'Production Deploy'
