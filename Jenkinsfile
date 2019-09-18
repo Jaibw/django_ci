@@ -13,9 +13,11 @@ node {
             sh 'env/bin/python3.6 manage.py test'
         
         stage 'Stagging Deploy'
+            sh 'chmod a+x deploy/staging.sh'
             sh 'deploy/staging.sh'
 
         stage 'Production Deploy'
+            sh 'chmod a+x deploy/prod.sh'
             sh 'deploy/prod.sh'
 
         
