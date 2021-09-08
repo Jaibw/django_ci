@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -i ~/auth/key.pem ubuntu@13.233.194.158 <<EOF
+ssh -i ~/auth/devops_demo.pem ubuntu@ec2-18-230-25-155.sa-east-1.compute.amazonaws.com <<EOF
   cd django_ci
   git pull
   source ../env/bin/activate
