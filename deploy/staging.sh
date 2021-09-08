@@ -6,6 +6,6 @@ ssh -i ~/auth/devops_demo.pem ubuntu@ec2-18-230-25-155.sa-east-1.compute.amazona
   source ../env/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
-  sudo supervisorctl restart djangoci
+  sudo systemctl start gunicorn.socket
   exit
 EOF
